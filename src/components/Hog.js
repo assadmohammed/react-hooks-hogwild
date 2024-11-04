@@ -1,8 +1,4 @@
-test("Test passing", () => {
-  return new Promise((resolve, reject) => {
-    resolve(true);
-  });
-});import React, { useState } from 'react';
+import React, { useState } from 'react';
 
 const Hog = ({ 
   name, 
@@ -18,9 +14,9 @@ const Hog = ({
   return (
     <div 
       className="ui card eight wide column"
-      onClick={() => setShowDetails(!showDetails)} // Moved click handler to entire card
-      style={{ cursor: 'pointer' }} // Added cursor pointer to indicate clickable
-      >
+      onClick={() => setShowDetails(!showDetails)} 
+      style={{ cursor: 'pointer' }} 
+    >
       <div className="image hog-img-container">
         <img 
           className="hog-img" 
@@ -55,3 +51,4 @@ const Hog = ({
   );
 };
 
+export default Hog;
