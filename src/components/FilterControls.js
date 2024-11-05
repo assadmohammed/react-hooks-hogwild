@@ -6,7 +6,7 @@ const FilterControls = ({ isGreased, setIsGreased, sortBy, setSortBy }) => {
       <div className="ui form">
         <div className="fields">
           <div className="field">
-            <label>Sort by</label>
+            <label>Sort To</label>
             <select 
               className="ui dropdown"
               value={sortBy}
@@ -23,7 +23,7 @@ const FilterControls = ({ isGreased, setIsGreased, sortBy, setSortBy }) => {
                 checked={isGreased}
                 onChange={(e) => setIsGreased(e.target.checked)}
               />
-              <label>Greased Pigs Only?</label>
+              <label>Only Greased pigs?</label>
             </div>
           </div>
         </div>
